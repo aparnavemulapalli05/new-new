@@ -16,11 +16,12 @@
     <option value="what is the name of your first pet?">what is the name of your first pet?</option>
     <option value="what elementary school did you attend?">what elementary school did you attend?</option>
     <option value="what is the name of the town where you were born?">what is the name of the town where you were born?</option>
-    
     </select>
-  </form>
-    
-      <h2><a href="">Login</a></h2>
+    <input type="text" name="answer" placeholder="Enter Answer" required>
+     <input type="password" name="password" placeholder="Enter Password" required>
+     <input type="submit" value="signup">
+     </form>
+    <h2><a href="">Login</a></h2>
   </div>
   <div class='whysign'>
 
