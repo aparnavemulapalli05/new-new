@@ -7,7 +7,7 @@
 <body>
 <div id='container'>
   <div class='signup'>
-  <form action="" method="post">
+  <form action="signupAction.jsp" method="post">
   <input type="text" name="name" placeholder="Enter Name" required>
    <input type="email" name="email" placeholder="Enter Email" required>
     <input type="number" name="mobilenumber" placeholder="Enter Mobile Number" required>
