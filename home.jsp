@@ -1,4 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page import="project.ConnectionProvider" %>
+<%@page import="java.sql.*" %>
+<%@include file="header.jsp" %>
+<%@include file="footer.jsp" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -13,12 +16,25 @@ h3
 </head>
 <body>
 <div style="color: white; text-align: center; font-size: 30px;">Home <i class="fa fa-institution"></i></div>
-
+<%
+String msg=request.getParameter("msg");
+if("added".equals(msg))
+{
+%>
 <h3 class="alert">Product added successfully!</h3>
-
+<%} %>
+<%
+if("exist".equals(msg))
+{
+%>
 <h3 class="alert">Product already exist in you cart! Quantity  increased!</h3>
-
-<h3 class="alert">Password change successfully!</h3>
+<%} %>
+<%
+if("invalid".equals(msg))
+{
+%>
+<h3 class="alert">Some thing went wrong! Try Again!</h3>
+<%} %>
 
 <table>
         <thead>
@@ -31,7 +47,14 @@ h3
           </tr>
         </thead>
         <tbody>
-
+<%
+try{
+	Connection con=ConnectionProvider.getCon();
+	Statement st=con.
+}
+catch()
+{
+%>
           <tr>
             <td></td>
             <td></td>
