@@ -10,9 +10,9 @@
     <br>
     <div class="topnav sticky">
             <center><h2>Change Details<i class="fa fa-edit"></i></h2></center>
-             
+             <%String email=session.getAttribute("email").toString(); %>
             <h2><a href=""><i class='fas fa-arrow-circle-left'>Back</i></a></h2>
-             <h2><a href="">Your Profile() <i class='fas fa-user-alt'></i></a></h2>
+             <h2><a href="">Your Profile(<%out.println(email); %>) <i class='fas fa-user-alt'></i></a></h2>
             <a href="">Change Password <i class='fas fa-key'></i></a>
             <a href="">Add or change Address <i class='fas fa-map-marker-alt'></i></a>
             <a href="">Change Security Question <i class="fa fa-repeat"></i></a>
